@@ -13,9 +13,9 @@ function generatePassword() {
   var wantsUpperCase = confirm("Would you like to include Uppercase Characters?");
   var wantsNumbers = confirm("Would you like to include Numbers?");
   var wantsSpecialChar = confirm("Would you like to include Special Characters?");
-  var password = '';
+  var password = " ";
 
-  // add lowercase if true
+  // Add below to options array if true
   if (wantsLowerCase) {
     options = lowerCase.concat(options)
   }
@@ -31,15 +31,13 @@ function generatePassword() {
   else if (wantsLowerCase && wantsUpperCase && wantsNumbers && wantsSpecialChar === false) {
     alert("Please choose at least one character type.");
   }
-  // loop for chosing character amount
+  // loop for random characters amount
   for (var i = 0; i <= charLength; i++) {
-    password = password + options.charAt(Math.floor(Math.random() * Math.floor[options.length - 1]));
+    password = password + Math.floor(Math.random() * Math.floor[options.length - 1]);
   }
   return password;
 }
 
-// generateBtn.addEventListener("click", writePassword);
-generateBtn.addEventListener("click", generatePassword);
 
 // Write password to the #password input
 function writePassword() {
@@ -48,7 +46,7 @@ function writePassword() {
 
   passwordText.value = password;
 }
-
+generateBtn.addEventListener("click", writePassword);
 
 
 
