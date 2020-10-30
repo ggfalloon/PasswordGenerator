@@ -5,15 +5,15 @@ var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 var specChar = ["%", "$", "*", "!", "@", "#", "^", "&", "*"]
 var options = []
 
+// Add event listener to generate button
 function generatePassword() {
-  var password = ''
-  var charLength = prompt("How many characters would you like to include? Please choose a number between 8 - 128");
-  var wantsLowerCase = confirm("Would you like to include lowercase characters?");
-  var wantsUpperCase = confirm("Would you like to include uppercase characters?");
-  var wantsNumbers = confirm("Would you like to include numbers?");
-  var wantsSpecialChar = confirm("Would you like to include special characters?");
 
-  // var noCharchosen = alert("Please choose at least one character type.");
+  var charLength = prompt("How many characters would you like to include? Please choose a number between 8 - 128");
+  var wantsLowerCase = confirm("Would you like to include Lowercase Characters?");
+  var wantsUpperCase = confirm("Would you like to include Uppercase Characters?");
+  var wantsNumbers = confirm("Would you like to include Numbers?");
+  var wantsSpecialChar = confirm("Would you like to include Special Characters?");
+  var password = '';
 
   // add lowercase if true
   if (wantsLowerCase) {
@@ -22,19 +22,24 @@ function generatePassword() {
   if (wantsUpperCase) {
     options = uppperCase.concat(options)
   }
-  if (wantsNumbers {
+  if (wantsNumbers) {
     options = numbers.concat(options)
   }
   if (wantsSpecialChar) {
     options = specChar.concat(options)
   }
-  if (wantsLowerCase) {
-    options = lowerCase.concat(options)
+  else if (wantsLowerCase && wantsUpperCase && wantsNumbers && wantsSpecialChar === false) {
+    alert("Please choose at least one character type.");
   }
-
-
+  // loop for chosing character amount
+  for (var i = 0; i <= charLength; i++) {
+    password = password + options.charAt(Math.floor(Math.random() * Math.floor[options.length - 1]));
+  }
   return password;
 }
+
+// generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", generatePassword);
 
 // Write password to the #password input
 function writePassword() {
@@ -44,6 +49,11 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+
+
+
+
+
+
 
