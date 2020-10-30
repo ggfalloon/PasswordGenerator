@@ -13,8 +13,8 @@ Click on the Generate Password button and follow the prompts to choose the lengt
 
 ## Credits
 * W3Schools.com
-* developer.mozilla.com
-* EloquientJavascript.com
+* developer.mozilla.org
+* EloquientJavascript.net
 
 ## License
 TBD
