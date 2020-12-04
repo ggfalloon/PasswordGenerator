@@ -31,7 +31,7 @@ function generatePassword() {
   }
 
   // Loop for random characters amount
-  for (var i = 0; i <= charLength; i++) {
+  for (var i = 1; i <= charLength; i++) {
     password = password + options[Math.floor(Math.random() * options.length)];
   }
   return password;
