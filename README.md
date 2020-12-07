@@ -17,7 +17,7 @@ Click on the Generate Password button and follow the prompts to choose the lengt
 * EloquientJavascript.net
 
 ## License
-[MIT LICENSE](LICENSE) 
+[MIT LICENSE](LICENSE) &copy; Gabriele Falloon - ggfalloon@gmail.com
 
 
 
