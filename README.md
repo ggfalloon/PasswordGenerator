@@ -17,7 +17,7 @@ Click on the Generate Password button and follow the prompts to choose the lengt
 * EloquientJavascript.net
 
 ## License
-TBD
+[MIT LICENSE](LICENSE)
 
 
 
