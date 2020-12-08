@@ -31,7 +31,7 @@ function generatePassword() {
   if (wantsSpecialChar) {
     options = specChar.concat(options)
   } else {
-    prompt("Please choose at least one option.")
+    prompt("Please choose at least one option.");
   } generatePassword();
 
   // Loop for random characters amount
