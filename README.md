@@ -1,6 +1,6 @@
 # Password Generator
 
-## Randomly Generating Password Application: Create a strong password to protect sensitive data for greater security.
+### Randomly Generating Password Application: Create a strong password to protect sensitive data for greater security.
 
 Utilizing the power of Javascript, this application will generate a random password. The user will have the option to choose the length of the password and the character types to be included. It is responsive and will adapt to the user's screen size. This is extremly useful for those who are charged with protecting sensitive data.
 
@@ -17,7 +17,7 @@ Click on the Generate Password button and follow the prompts to choose the lengt
 * EloquientJavascript.net
 
 ## License
-TBD
+[MIT LICENSE](LICENSE) &copy; Gabriele Falloon - ggfalloon@gmail.com
 
 
 
