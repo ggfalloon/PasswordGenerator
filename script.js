@@ -17,6 +17,8 @@ function generatePassword() {
   var password = " ";
 
   // Add below to options array if true
+
+
   if (wantsLowerCase) {
     options = lowerCase.concat(options)
   }
@@ -28,10 +30,12 @@ function generatePassword() {
   }
   if (wantsSpecialChar) {
     options = specChar.concat(options)
-  }
+  } else {
+    prompt("Please choose at least one option.")
+  } generatePassword();
 
   // Loop for random characters amount
-  for (var i = 1; i <= charLength; i++) {
+  for (var i = 0; i <= charLength; i++) {
     password = password + options[Math.floor(Math.random() * options.length)];
   }
   return password;
