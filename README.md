@@ -9,7 +9,7 @@ URL - https://ggfalloon.github.io/PasswordGenerator/
 
 Click on the Generate Password button and follow the prompts to choose the length and character types of your new randomly generated password. After making your choices, you'll find that your new, secure password will populate in the dashed box on the center of the page.
 
-![PasswordGenerator](https://user-images.githubusercontent.com/71281652/97763002-46527800-1ad8-11eb-8c45-ca5b8f93f8c4.png)
+![passwordgenerator](https://user-images.githubusercontent.com/71281652/101669801-fee4d300-3a17-11eb-98c0-c069a5a88f1c.png)
 
 ## Credits
 * W3Schools.com
